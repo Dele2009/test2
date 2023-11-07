@@ -13,6 +13,7 @@
     <title></title>
     <style>
         body {
+            padding: 150px 0px 0px 0px;
             background-image: url(lake-ultra-hd-4k-7f-1920x10801.jpg);
             background-repeat: no-repeat;
             background-size: cover;
@@ -117,6 +118,7 @@
             height: fit-content;
             padding: 10px;
             border-radius: 20px;
+            z-index: ;
 
         }
 
@@ -126,25 +128,27 @@
             top: 28px;
             right: -13px;
             justify-content: flex-end;
-            background: rgba(250, 106, 3, 0.416);
+            background: rgba(250, 106, 3, 0.64);
             position: absolute;
+            
 
         }
 
         header {
 
-            position: relative;
+            position: fixed;
             display: inline-block;
             width: 50%;
-            left: 26%;
+            left: 25%;
             right: 0%;
-            top: 10%;
+            top: -6%;
             bottom: 0%;
             color: rgb(233, 117, 16);
             text-transform: uppercase;
             font-family: 'Bungee Spice', sans-serif;
             font-size: 30px;
             text-align: center;
+            z-index: -5;
         }
 
         .ji {
@@ -185,6 +189,7 @@
             right: 0%;
             bottom: 0%;
             left: 2%;
+            z-index: -5;
         }
 
         main h2 {
@@ -233,6 +238,19 @@
             padding: 1% 1%;
 
         }
+        @media screen  and (max-width:768px) {
+            body{
+                overflow-x: hidden;
+            }
+            header{
+                position: relative;
+                left: 25.5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
 
 
         /* main a:hover{
@@ -259,7 +277,7 @@
         <img src="" alt="">
     </div>
     <header>
-        <h1>welcome to <br>travel treasures</h1>
+        <h1>welcome to travel treasures</h1>
     </header>
 
     <main>
